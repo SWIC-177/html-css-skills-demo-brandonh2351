@@ -5,3 +5,16 @@ h1 {
 p {
   text-align: center;
 }
+
+h2 {
+  text-align: center;
+}
+
+div.container {
+  text-align: center;
+}
+
+ul.myul {
+  display: inline-block;
+  text-align: left;
+}
