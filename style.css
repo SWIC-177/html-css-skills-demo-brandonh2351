@@ -1,3 +1,4 @@
+/* stylelint-disable selector-id-pattern */
 h1 {
   text-align: center;
 }
@@ -28,4 +29,16 @@ body {
 form {
   margin: 0 auto;
   width: 350px;
+  text-align: center;
+}
+
+fieldset {
+  border: 3px solid black;
+  color: red;
+}
+
+#centerDoc {
+  position: absolute;
+  padding: 0 0 20px;
+  margin-top: -80px;
 }
