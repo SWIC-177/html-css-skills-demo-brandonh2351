@@ -1,4 +1,5 @@
-/* stylelint-disable selector-id-pattern */
+@import url("node_modules/modern-normalize/modern-normalize.css");
+
 h1 {
   text-align: center;
 }
@@ -37,6 +38,7 @@ fieldset {
   color: red;
 }
 
+/* stylelint-disable-next-line selector-id-pattern */
 #centerDoc {
   position: absolute;
   padding: 0 0 20px;
