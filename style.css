@@ -9,7 +9,7 @@ ul.myul {
 }
 
 body {
-  background-image: url("hills.jpg");
+  background-image: url("./images/hills.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
