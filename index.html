@@ -30,8 +30,12 @@
         </ul>
       </div>
       <div>
-        <h2>Here is a pic of one of my favorite wrestlers</h2>
-        <img src="./images/rey.jpg" alt="picture of rey mysterio" />
+        <h2 class="text-2xl">Here is a pic of one of my favorite wrestlers</h2>
+        <img
+          class="absolute"
+          src="./images/rey.jpg"
+          alt="picture of rey mysterio"
+        />
       </div>
       <div class="text-center">
         <h2>Here Is A Good Quote I Found</h2>
@@ -42,14 +46,14 @@
           >
           - Albert Einstein
         </p>
-        <form>
+        <form class="flex-col">
           <h1>Contact</h1>
 
           E-mail: <input type="text" name="email" id="email" />
           <br />
           <br />
 
-          <fieldset>
+          <fieldset class="grid">
             <legend>Checkbox:</legend>
             <input type="checkbox" name="option1" id="option1" /> Option 1<br />
             <input type="checkbox" name="option2" id="option2" /> Option 2<br />
@@ -70,11 +74,13 @@
             <option value="option3">Option 3</option>
           </select>
           <br />
-          <h2>TextBox Test</h2>
+          <h2 class="text-3xl text-blue-500">TextBox Test</h2>
           <textarea name="role" id="role" cols="60" rows="3"> </textarea>
           <br />
           <br />
-          <input type="submit" value="Submit" /> <input type="reset" />
+          <div class="text-3xl">
+            <input type="submit" value="Submit" /> <input type="reset" />
+          </div>
         </form>
       </div>
     </div>
