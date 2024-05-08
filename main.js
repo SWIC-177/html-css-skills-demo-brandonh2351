@@ -1,3 +1,7 @@
+import { ERRORS } from "./src/utils";
+
+console.log(ERRORS);
+
 const formInputs = [
   ...Array.from(document.querySelectorAll("input")),
   document.querySelector("#textbox"),
@@ -9,6 +13,8 @@ console.log(formButtons);
 
 formInputs.forEach((ip) => {
   ip.addEventListener("blur", (e) => {
-    console.log("blur event", e.target.id);
+    console.log(
+      ERRORS.find((error) => error.id === e.target.id).validate(e.target.value),
+    );
   });
 });
