@@ -2,6 +2,47 @@ import validator from "validator";
 
 export const ERRORS = [
   {
+    id: "option1",
+    validate: (value) => {
+      // Example validation rule: At least one checkbox must be checked
+      return (
+        document.querySelectorAll('input[type="checkbox"]:checked').length > 0
+      );
+    },
+    msg: "Please select at least one option.",
+  },
+  {
+    id: "option2",
+    validate: (value) => {
+      // Example validation rule: At least one checkbox must be checked
+      return (
+        document.querySelectorAll('input[type="checkbox"]:checked').length > 0
+      );
+    },
+    msg: "Please select at least one option.",
+  },
+  {
+    id: "option3",
+    validate: (value) => {
+      // Example validation rule: At least one checkbox must be checked
+      return (
+        document.querySelectorAll('input[type="checkbox"]:checked').length > 0
+      );
+    },
+    msg: "Please select at least one option.",
+  },
+  {
+    id: "option4",
+    validate: (value) => {
+      // Example validation rule: At least one checkbox must be checked
+      return (
+        document.querySelectorAll('input[type="checkbox"]:checked').length > 0
+      );
+    },
+    msg: "Please select at least one option.",
+  },
+
+  {
     id: "name",
     msg: "Please enter your full name.",
     validate(val) {
