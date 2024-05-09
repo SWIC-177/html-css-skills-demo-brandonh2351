@@ -1,4 +1,4 @@
-import { ERRORS } from "./src/utils";
+import { ERRORS, hideError, renderError } from "./src/utils";
 
 console.log(ERRORS);
 
@@ -13,8 +13,8 @@ console.log(formButtons);
 
 formInputs.forEach((ip) => {
   ip.addEventListener("blur", (e) => {
-    console.log(
-      ERRORS.find((error) => error.id === e.target.id).validate(e.target.value),
-    );
+    const ipError = ERRORS.find((error) => error.id === e.target.id);
+    if (!ipError.validate(e.target.value)) renderError(e.target, ipError.msg);
+    else hideError(e.target);
   });
 });
