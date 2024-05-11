@@ -18,3 +18,26 @@ formInputs.forEach((ip) => {
     else hideError(e.target);
   });
 });
+
+const validateForm = () => {
+  let isValid = true;
+  formInputs.forEach((input) => {
+    const error = ERRORS.find((error) => error.id === input.id);
+    if (!error.validate(input.value)) {
+      renderError(input, error.msg);
+      isValid = false;
+    } else {
+      hideError(input);
+    }
+  });
+  return isValid;
+};
+
+formButtons.forEach((button) => {
+  button.addEventListener("click", (e) => {
+    e.preventDefault();
+    if (validateForm()) {
+      e.target.closest("form").submit();
+    }
+  });
+});
