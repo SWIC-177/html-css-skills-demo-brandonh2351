@@ -24,39 +24,39 @@ export const ERRORS = [
   },
   {
     id: "option1",
-    validate: (value) => {
+    validate: (val) => {
       return (
         document.querySelectorAll('input[type="checkbox"]:checked').length > 0
       );
     },
-    msg: "Please select at least one option.",
+    msg: "Please check at least one option.",
   },
   {
     id: "option2",
-    validate: (value) => {
+    validate: (val) => {
       return (
         document.querySelectorAll('input[type="checkbox"]:checked').length > 0
       );
     },
-    msg: "Please select at least one option.",
+    msg: "Please check at least one option.",
   },
   {
     id: "option3",
-    validate: (value) => {
+    validate: (val) => {
       return (
         document.querySelectorAll('input[type="checkbox"]:checked').length > 0
       );
     },
-    msg: "Please select at least one option.",
+    msg: "Please check at least one option.",
   },
   {
     id: "option4",
-    validate: (value) => {
+    validate: (val) => {
       return (
         document.querySelectorAll('input[type="checkbox"]:checked').length > 0
       );
     },
-    msg: "Please select at least one option.",
+    msg: "Please check at least one option.",
   },
 
   {
